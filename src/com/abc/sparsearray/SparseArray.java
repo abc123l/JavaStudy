@@ -1,5 +1,8 @@
 package com.abc.sparsearray;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+
 /**
  * @author abc
  * @version 1.0
@@ -75,5 +78,9 @@ public class SparseArray {
             System.out.println();
         }
 
+        String filePath="e://temp/map.data";
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(filePath));
+
+        //待续
     }
 }
