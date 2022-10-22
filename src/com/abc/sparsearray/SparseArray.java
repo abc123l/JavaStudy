@@ -9,7 +9,7 @@ import java.io.FileWriter;
  * 以p11上方中间数组为例
  */
 public class SparseArray {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
         int[][] chessArr1 = new int[11][11];
         chessArr1[1][2] = 1;
         chessArr1[2][3] = 2;
@@ -66,6 +66,7 @@ public class SparseArray {
         for (int i = 1; i < sparseArr.length; i++) {
             //读取稀疏数组剩下的的行里面的元素得到
             // 第几行（sparseArr[i][0]），第几列（sparseArr[i][1]）的值（sparseArr[i][2]）
+
             //并赋给新创建的二维数组
             chessArr2[sparseArr[i][0]][sparseArr[i][1]]=sparseArr[i][2];
         }
