@@ -1,7 +1,9 @@
 package com.abc.sparsearray;
 
 import java.io.BufferedWriter;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
+import java.io.ObjectOutputStream;
 
 /**
  * @author abc
@@ -79,9 +81,13 @@ public class SparseArray {
             System.out.println();
         }
 
-        String filePath="e://temp/map.data";
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(filePath));
 
         //待续
+        String writeFilePath="e://temp/map.data";
+        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(writeFilePath));
+        oos.writeObject(chessArr2);
+        oos.close();
+
+
     }
 }
