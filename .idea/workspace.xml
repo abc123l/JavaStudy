@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cedd577-6c47-4b8a-af9a-c26cdcf9670a" name="Changes" comment="">
+    <list default="true" id="5cedd577-6c47-4b8a-af9a-c26cdcf9670a" name="Changes" comment="在主方法测试了队列，发现的问题：显示队列头部时的索引有问题。 需要改进的地方：数组只用了一次，取完之后不能再加数据">
+      <change afterPath="$PROJECT_DIR$/src/com/abc/queue/CircularQueueDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/abc/queue/ArrayQueueDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/abc/queue/ArrayQueueDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,21 +37,8 @@
     &quot;last_opened_file_path&quot;: &quot;D:/idea_java_projects/DataStructures&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.ArrayQueueDemo">
+  <component name="RunManager" selected="Application.CircularQueueDemo (2)">
     <configuration name="ArrayQueueDemo (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.abc.queue.ArrayQueueDemo" />
-      <module name="DataStructures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.abc.queue.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ArrayQueueDemo (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.abc.queue.ArrayQueueDemo" />
       <module name="DataStructures" />
       <extension name="coverage">
@@ -77,12 +64,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SparseArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.abc.sparsearray.SparseArray" />
+    <configuration name="ArrayQueueDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abc.queue.ArrayQueueDemo" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.abc.sparsearray.*" />
+          <option name="PATTERN" value="com.abc.queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CircularQueueDemo (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abc.queue.CircularQueueDemo" />
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.abc.queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CircularQueueDemo (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abc.queue.CircularQueueDemo" />
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.abc.queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CircularQueueDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abc.queue.CircularQueueDemo" />
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.abc.queue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,10 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CircularQueueDemo (2)" />
+        <item itemvalue="Application.CircularQueueDemo (1)" />
+        <item itemvalue="Application.CircularQueueDemo" />
         <item itemvalue="Application.ArrayQueueDemo" />
         <item itemvalue="Application.ArrayQueueDemo (2)" />
-        <item itemvalue="Application.ArrayQueueDemo (1)" />
-        <item itemvalue="Application.SparseArray" />
       </list>
     </recent_temporary>
   </component>
@@ -111,7 +138,7 @@
       <workItem from="1666421718411" duration="4489000" />
       <workItem from="1666437428017" duration="1308000" />
       <workItem from="1666439350936" duration="52000" />
-      <workItem from="1666510382297" duration="2051000" />
+      <workItem from="1666510382297" duration="8933000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1666352034413</created>
@@ -141,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666437623247</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="在主方法测试了队列，发现的问题：显示队列头部时的索引有问题。 需要改进的地方：数组只用了一次，取完之后不能再加数据">
+      <created>1666512683053</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666512683053</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +219,7 @@
     <MESSAGE value="test" />
     <MESSAGE value="queue" />
     <MESSAGE value="加入了如何把二维数组写入map.data" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="在主方法测试了队列，发现的问题：显示队列头部时的索引有问题。 需要改进的地方：数组只用了一次，取完之后不能再加数据" />
+    <option name="LAST_COMMIT_MESSAGE" value="在主方法测试了队列，发现的问题：显示队列头部时的索引有问题。 需要改进的地方：数组只用了一次，取完之后不能再加数据" />
   </component>
 </project>
