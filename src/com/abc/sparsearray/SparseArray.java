@@ -1,9 +1,6 @@
 package com.abc.sparsearray;
 
-import java.io.BufferedWriter;
-import java.io.FileOutputStream;
-import java.io.FileWriter;
-import java.io.ObjectOutputStream;
+import java.io.*;
 
 /**
  * @author abc
@@ -83,10 +80,21 @@ public class SparseArray {
 
 
         //待续
+        System.out.println("序列化和反序列化");
         String writeFilePath="e://temp/map.data";
         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(writeFilePath));
         oos.writeObject(chessArr2);
         oos.close();
+
+        ObjectInputStream ois = new ObjectInputStream(new FileInputStream(writeFilePath));
+        Object o = ois.readObject();
+        int [][] arr=(int[][]) o;
+        for (int[] outside :arr) {
+            for (int inside :outside) {
+                System.out.printf("%d\t",inside);
+            }
+            System.out.println();
+        }
 
 
     }
