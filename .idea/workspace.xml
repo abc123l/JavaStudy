@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cedd577-6c47-4b8a-af9a-c26cdcf9670a" name="Changes" comment="实现了环形队列，相关技术参考大话数据结构112页">
+    <list default="true" id="5cedd577-6c47-4b8a-af9a-c26cdcf9670a" name="Changes" comment="增加了系数数组序列化和反序列化操作">
+      <change afterPath="$PROJECT_DIR$/src/com/abc/linkedlist_/SingleLinkedListDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/abc/sparsearray/SparseArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/abc/sparsearray/SparseArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/abc/queue/ArrayQueueDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/abc/queue/ArrayQueueDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,21 +30,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/idea_java_projects/DataStructures&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/idea_java_projects/DataStructures"
   }
-}</component>
-  <component name="RunManager" selected="Application.SparseArray">
-    <configuration name="ArrayQueueDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.abc.queue.ArrayQueueDemo" />
+}]]></component>
+  <component name="RunManager" selected="Application.SingleLinkedListDemo">
+    <configuration name="SingleLinkedListDemo (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abc.linkedlist_.SingleLinkedListDemo" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.abc.queue.*" />
+          <option name="PATTERN" value="com.abc.linkedlist_.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -51,12 +52,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArrayQueueDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.abc.queue.ArrayQueueDemo" />
+    <configuration name="SingleLinkedListDemo (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abc.linkedlist_.SingleLinkedListDemo" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.abc.queue.*" />
+          <option name="PATTERN" value="com.abc.linkedlist_.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -64,12 +65,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CircularQueueDemo (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.abc.queue.CircularQueueDemo" />
+    <configuration name="SingleLinkedListDemo (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abc.linkedlist_.SingleLinkedListDemo" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.abc.queue.*" />
+          <option name="PATTERN" value="com.abc.linkedlist_.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,25 +78,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CircularQueueDemo (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.abc.queue.CircularQueueDemo" />
+    <configuration name="SingleLinkedListDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abc.linkedlist_.SingleLinkedListDemo" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.abc.queue.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CircularQueueDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.abc.queue.CircularQueueDemo" />
-      <module name="DataStructures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.abc.queue.*" />
+          <option name="PATTERN" value="com.abc.linkedlist_.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,11 +106,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SingleLinkedListDemo" />
+        <item itemvalue="Application.SingleLinkedListDemo (3)" />
+        <item itemvalue="Application.SingleLinkedListDemo (2)" />
+        <item itemvalue="Application.SingleLinkedListDemo (1)" />
         <item itemvalue="Application.SparseArray" />
-        <item itemvalue="Application.CircularQueueDemo (2)" />
-        <item itemvalue="Application.CircularQueueDemo (1)" />
-        <item itemvalue="Application.CircularQueueDemo" />
-        <item itemvalue="Application.ArrayQueueDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +128,8 @@
       <workItem from="1666439350936" duration="52000" />
       <workItem from="1666510382297" duration="9295000" />
       <workItem from="1666533708773" duration="21000" />
-      <workItem from="1666612381087" duration="532000" />
+      <workItem from="1666612381087" duration="5052000" />
+      <workItem from="1666617745367" duration="3815000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1666352034413</created>
@@ -191,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666528045146</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="增加了系数数组序列化和反序列化操作">
+      <created>1666613030982</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666613030982</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,6 +233,7 @@
     <MESSAGE value="加入了如何把二维数组写入map.data" />
     <MESSAGE value="在主方法测试了队列，发现的问题：显示队列头部时的索引有问题。 需要改进的地方：数组只用了一次，取完之后不能再加数据" />
     <MESSAGE value="实现了环形队列，相关技术参考大话数据结构112页" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现了环形队列，相关技术参考大话数据结构112页" />
+    <MESSAGE value="增加了系数数组序列化和反序列化操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加了系数数组序列化和反序列化操作" />
   </component>
 </project>
