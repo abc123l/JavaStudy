@@ -5,6 +5,7 @@ import java.util.Comparator;
 /**
  * @author abc
  * @version 1.0
+ * 单项链表的实现，注意flag的使用
  */
 public class SingleLinkedListDemo {
     public static void main(String[] args) {
@@ -24,13 +25,73 @@ public class SingleLinkedListDemo {
         singleLinkedList.addByOrder(hero1);
         singleLinkedList.addByOrder(hero4);
         singleLinkedList.addByOrder(hero3);
-
+        System.out.println("修改前");
         singleLinkedList.show();
+
+        //测试修改节点的代码
+        HeroNode updateHeroNode = new HeroNode(1, "sj", "jsy");
+        singleLinkedList.update(updateHeroNode);
+
+        System.out.println("修改后");
+        singleLinkedList.show();
+
+        singleLinkedList.delete(1);
+        System.out.println("删除后");
+        singleLinkedList.show();
+
+
+        System.out.println("链表有效元素是："+getLength(singleLinkedList.head));
+
+        System.out.println(findLastIndexNode(singleLinkedList.head,4));
     }
+
+    //方法：获取到单链表的节点的个数（如果是带头节点的单链表,需要不统计头节点）
+
+    /**
+     *
+     * @param head 链表的头节点
+     * @return 返回有效节点的个数
+     */
+    public static int getLength(HeroNode head){
+        if (head.next==null){
+            return -1;
+        }
+        int length=0;
+        HeroNode temp=head.next;
+        while (temp!=null){
+            length++;
+            temp=temp.next;
+        }
+        return length;
+    }
+
+    /**
+     * 找到单链表中倒数第index个节点
+     * 先得到单链表有效节点的个数,再从第一个有效节点开始遍历length-index个节点返回即可
+     * @param head
+     * @param index
+     * @return
+     */
+    public static HeroNode findLastIndexNode(HeroNode head,int index){
+        if (head.next==null){
+            return null;
+        }
+        int length = getLength(head);
+        if (index<=0 || index>length){
+            return null;
+        }
+        HeroNode temp=head.next;
+        for (int i = 0; i < length-index; i++) {
+            temp=temp.next;
+        }
+        return temp;
+    }
+
 }
-class SingleLinkedList{//管理单项链表，有一个头节点，尾节点的next为空
+class SingleLinkedList{
+    //管理单项链表，有一个头节点，尾节点的next为空
     //初始化一个头节点，不存放具体数据，不能动
-    private HeroNode head=new HeroNode(0,"","");
+     HeroNode head=new HeroNode(0,"","");
     //完成添加方法
     public void add(HeroNode heroNode){
         //当不考虑编号的顺序时，找到链表的最后节点，此节点的next指向新节点即可
@@ -76,7 +137,61 @@ class SingleLinkedList{//管理单项链表，有一个头节点，尾节点的n
         temp.next=heroNode;
     }
 
+    /**
+     * 修改
+     * @param heroNode 根据它的no在链表中找有没有相同的元素，如果有就修改
+     */
+    public void update(HeroNode heroNode){
+        if(head.next==null){
+            System.out.println("链表为空");
+            return;
+        }
+        boolean flag=false;//表示再链表中有没有找到传入的元素
+        HeroNode temp=head;//遍历需要的辅助变量
+        while (true){
+            if (temp.no==heroNode.no){
+                flag=true;//表示已经找到
+                break;
+            }
+            if (temp.next==null){
+                break;//找到链表的最后也没有找到，直接跳出
+            }
 
+            temp=temp.next;
+        }
+        //根据flag判断
+        if (flag){
+            temp.name= heroNode.name;
+            temp.nickName= heroNode.nickName;
+        }else {
+            System.out.printf("没有找到，编号为%d的节点\n",heroNode.no);
+        }
+    }
+
+    /**
+     * 删除节点 单项链表 需要找到待删除节点的前一个节点才能执行删除操作
+     * @param no 需要删除的节点
+     */
+    public void delete(int no){
+        boolean flag=false;//表示是否找到要删除节点的前一个节点
+        HeroNode temp=head;
+        while (true){
+            if (temp.next==null){
+                break;
+            }
+            if (temp.next.no==no){//找到待删除节点的前一个节点
+                flag=true;
+                break;
+            }
+            temp=temp.next;
+        }
+        if (flag){
+            temp.next=temp.next.next;
+        }else {
+            System.out.printf("未找到编号为%d节点\n",no);
+        }
+
+    }
 
     //显示链表，还是需要一个辅助变量
     public void show(){
@@ -115,7 +230,4 @@ class HeroNode{
                 //如果加上next的话每打印一个元素就会把后面的元素全部打完！！！
                 '}';
     }
-
-
-
 }
