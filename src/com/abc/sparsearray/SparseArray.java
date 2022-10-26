@@ -96,6 +96,7 @@ public class SparseArray {
             System.out.println();
         }
 
+        ois.close();
 
     }
 }
