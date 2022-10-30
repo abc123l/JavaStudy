@@ -1,5 +1,7 @@
 package com.abc.queue;
 
+import org.junit.jupiter.api.Test;
+
 import java.util.Scanner;
 
 /**
@@ -55,6 +57,10 @@ public class CircularQueueDemo {
 
         }
         System.out.println("程序退出");
+    }
+    @Test
+    public void test(){
+        System.out.println(2%5);
     }
 }
 class CircularQueue{
