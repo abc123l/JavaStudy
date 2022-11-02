@@ -11,10 +11,11 @@ public class EnemyTank extends Tank implements Runnable {
     //存放每一个敌人坦克的子弹
     Vector<Shot> shots = new Vector<>();
     //防止敌人坦克重叠就需要获得敌人的所有坦克
-    Vector<EnemyTank> enemyTanks =new Vector<>();
+    Vector<EnemyTank> enemyTanks = new Vector<>();
 
     /**
      * 此方法是可以让myPanel类调用将它的EnemyTank集合赋给本类，获取敌人的所有坦克
+     *
      * @param enemyTanks
      */
     public void setEnemyTanks(Vector<EnemyTank> enemyTanks) {
@@ -24,46 +25,47 @@ public class EnemyTank extends Tank implements Runnable {
     /**
      * 此方法判断实例化对象是否与其他所有敌人坦克发生碰撞
      * 方法论：根据当前坦克的方向来判断
+     *
      * @return
      */
-    public boolean isTouchEnemyTank(){
-        switch (this.getDirect()){//
+    public boolean isTouchEnemyTank() {
+        switch (this.getDirect()) {//
             case 0://up
                 for (int i = 0; i < enemyTanks.size(); i++) {
                     EnemyTank enemyTank = enemyTanks.get(i);
                     //不和自己比较，这一步必不可少
-                    if (this!=enemyTank){
-                        if (enemyTank.getDirect()==0 || enemyTank.getDirect()==2){//敌人坦克是上下
+                    if (this != enemyTank) {
+                        if (enemyTank.getDirect() == 0 || enemyTank.getDirect() == 2) {//敌人坦克是上下
                             //考虑碰撞有两点，以自己的坦克为参考系，左前方的点在敌人坦克区域内和右前方的点在敌人坦克区域内
                             //左上角
-                            if (this.getX()>= enemyTank.getX()
-                            && this.getX()<= enemyTank.getX()+40
-                            && this.getY()>= enemyTank.getY()//注意这是正确写法
-                            && this.getY()<= enemyTank.getY()+60){
+                            if (this.getX() >= enemyTank.getX()
+                                    && this.getX() <= enemyTank.getX() + 40
+                                    && this.getY() >= enemyTank.getY()//注意这是正确写法
+                                    && this.getY() <= enemyTank.getY() + 60) {
                                 return true;
                             }
                             //右上角
-                            if (this.getX()+40>= enemyTank.getX()
-                                    && this.getX()+40<= enemyTank.getX()+40
-                                    && this.getY()>= enemyTank.getY()//注意这是正确写法
-                                    && this.getY()<= enemyTank.getY()+60){
+                            if (this.getX() + 40 >= enemyTank.getX()
+                                    && this.getX() + 40 <= enemyTank.getX() + 40
+                                    && this.getY() >= enemyTank.getY()//注意这是正确写法
+                                    && this.getY() <= enemyTank.getY() + 60) {
                                 return true;
                             }
                         }
 
-                        if (enemyTank.getDirect()==1 || enemyTank.getDirect()==3){//敌人坦克是左右
+                        if (enemyTank.getDirect() == 1 || enemyTank.getDirect() == 3) {//敌人坦克是左右
                             //左上角
-                            if (this.getX()>= enemyTank.getX()
-                                    && this.getX()<= enemyTank.getX()+60
-                                    && this.getY()>= enemyTank.getY()//注意这是正确写法
-                                    && this.getY()<= enemyTank.getY()+40){
+                            if (this.getX() >= enemyTank.getX()
+                                    && this.getX() <= enemyTank.getX() + 60
+                                    && this.getY() >= enemyTank.getY()//注意这是正确写法
+                                    && this.getY() <= enemyTank.getY() + 40) {
                                 return true;
                             }
                             //右上角
-                            if (this.getX()+40>= enemyTank.getX()
-                                    && this.getX()+40<= enemyTank.getX()+60
-                                    && this.getY()>= enemyTank.getY()//注意这是正确写法
-                                    && this.getY()<= enemyTank.getY()+40){
+                            if (this.getX() + 40 >= enemyTank.getX()
+                                    && this.getX() + 40 <= enemyTank.getX() + 60
+                                    && this.getY() >= enemyTank.getY()//注意这是正确写法
+                                    && this.getY() <= enemyTank.getY() + 40) {
                                 return true;
                             }
                         }
@@ -74,37 +76,37 @@ public class EnemyTank extends Tank implements Runnable {
                 for (int i = 0; i < enemyTanks.size(); i++) {
                     EnemyTank enemyTank = enemyTanks.get(i);
                     //不和自己比较，这一步必不可少
-                    if (this!=enemyTank){
-                        if (enemyTank.getDirect()==0 || enemyTank.getDirect()==2){//敌人坦克是上下
+                    if (this != enemyTank) {
+                        if (enemyTank.getDirect() == 0 || enemyTank.getDirect() == 2) {//敌人坦克是上下
                             //右上角
-                            if (this.getX()+60>= enemyTank.getX()
-                                    && this.getX()+60<= enemyTank.getX()+40
-                                    && this.getY()>= enemyTank.getY()//注意这是正确写法
-                                    && this.getY()<= enemyTank.getY()+60){
+                            if (this.getX() + 60 >= enemyTank.getX()
+                                    && this.getX() + 60 <= enemyTank.getX() + 40
+                                    && this.getY() >= enemyTank.getY()//注意这是正确写法
+                                    && this.getY() <= enemyTank.getY() + 60) {
                                 return true;
                             }
                             //右下角
-                            if (this.getX()+60>= enemyTank.getX()
-                                    && this.getX()+60<= enemyTank.getX()+40
-                                    && this.getY()+40>= enemyTank.getY()//注意这是正确写法
-                                    && this.getY()+40<= enemyTank.getY()+60){
+                            if (this.getX() + 60 >= enemyTank.getX()
+                                    && this.getX() + 60 <= enemyTank.getX() + 40
+                                    && this.getY() + 40 >= enemyTank.getY()//注意这是正确写法
+                                    && this.getY() + 40 <= enemyTank.getY() + 60) {
                                 return true;
                             }
                         }
 
-                        if (enemyTank.getDirect()==1 || enemyTank.getDirect()==3){//敌人坦克是左右
+                        if (enemyTank.getDirect() == 1 || enemyTank.getDirect() == 3) {//敌人坦克是左右
                             //右上角
-                            if (this.getX()+60>= enemyTank.getX()
-                                    && this.getX()+60<= enemyTank.getX()+60
-                                    && this.getY()>= enemyTank.getY()//注意这是正确写法
-                                    && this.getY()<= enemyTank.getY()+40){
+                            if (this.getX() + 60 >= enemyTank.getX()
+                                    && this.getX() + 60 <= enemyTank.getX() + 60
+                                    && this.getY() >= enemyTank.getY()//注意这是正确写法
+                                    && this.getY() <= enemyTank.getY() + 40) {
                                 return true;
                             }
                             //右下角
-                            if (this.getX()+60>= enemyTank.getX()
-                                    && this.getX()+60<= enemyTank.getX()+60
-                                    && this.getY()+40>= enemyTank.getY()//注意这是正确写法
-                                    && this.getY()+40<= enemyTank.getY()+40){
+                            if (this.getX() + 60 >= enemyTank.getX()
+                                    && this.getX() + 60 <= enemyTank.getX() + 60
+                                    && this.getY() + 40 >= enemyTank.getY()//注意这是正确写法
+                                    && this.getY() + 40 <= enemyTank.getY() + 40) {
                                 return true;
                             }
                         }
@@ -115,37 +117,37 @@ public class EnemyTank extends Tank implements Runnable {
                 for (int i = 0; i < enemyTanks.size(); i++) {
                     EnemyTank enemyTank = enemyTanks.get(i);
                     //不和自己比较，这一步必不可少
-                    if (this!=enemyTank){
-                        if (enemyTank.getDirect()==0 || enemyTank.getDirect()==2){//敌人坦克是上下
+                    if (this != enemyTank) {
+                        if (enemyTank.getDirect() == 0 || enemyTank.getDirect() == 2) {//敌人坦克是上下
                             //左下角
-                            if (this.getX()>= enemyTank.getX()
-                                    && this.getX()<= enemyTank.getX()+40
-                                    && this.getY()+60>= enemyTank.getY()//注意这是正确写法
-                                    && this.getY()+60<= enemyTank.getY()+60){
+                            if (this.getX() >= enemyTank.getX()
+                                    && this.getX() <= enemyTank.getX() + 40
+                                    && this.getY() + 60 >= enemyTank.getY()//注意这是正确写法
+                                    && this.getY() + 60 <= enemyTank.getY() + 60) {
                                 return true;
                             }
                             //右下角
-                            if (this.getX()+40>= enemyTank.getX()
-                                    && this.getX()+40<= enemyTank.getX()+40
-                                    && this.getY()+60>= enemyTank.getY()//注意这是正确写法
-                                    && this.getY()+60<= enemyTank.getY()+60){
+                            if (this.getX() + 40 >= enemyTank.getX()
+                                    && this.getX() + 40 <= enemyTank.getX() + 40
+                                    && this.getY() + 60 >= enemyTank.getY()//注意这是正确写法
+                                    && this.getY() + 60 <= enemyTank.getY() + 60) {
                                 return true;
                             }
                         }
 
-                        if (enemyTank.getDirect()==1 || enemyTank.getDirect()==3){//敌人坦克是左右
+                        if (enemyTank.getDirect() == 1 || enemyTank.getDirect() == 3) {//敌人坦克是左右
                             //左下角
-                            if (this.getX()>= enemyTank.getX()
-                                    && this.getX()<= enemyTank.getX()+60
-                                    && this.getY()+60>= enemyTank.getY()//注意这是正确写法
-                                    && this.getY()+60<= enemyTank.getY()+40){
+                            if (this.getX() >= enemyTank.getX()
+                                    && this.getX() <= enemyTank.getX() + 60
+                                    && this.getY() + 60 >= enemyTank.getY()//注意这是正确写法
+                                    && this.getY() + 60 <= enemyTank.getY() + 40) {
                                 return true;
                             }
                             //右下角
-                            if (this.getX()+40>= enemyTank.getX()
-                                    && this.getX()+40<= enemyTank.getX()+60
-                                    && this.getY()+60>= enemyTank.getY()//注意这是正确写法
-                                    && this.getY()+60<= enemyTank.getY()+40){
+                            if (this.getX() + 40 >= enemyTank.getX()
+                                    && this.getX() + 40 <= enemyTank.getX() + 60
+                                    && this.getY() + 60 >= enemyTank.getY()//注意这是正确写法
+                                    && this.getY() + 60 <= enemyTank.getY() + 40) {
                                 return true;
                             }
                         }
@@ -156,37 +158,37 @@ public class EnemyTank extends Tank implements Runnable {
                 for (int i = 0; i < enemyTanks.size(); i++) {
                     EnemyTank enemyTank = enemyTanks.get(i);
                     //不和自己比较，这一步必不可少
-                    if (this!=enemyTank){
-                        if (enemyTank.getDirect()==0 || enemyTank.getDirect()==2){//敌人坦克是上下
+                    if (this != enemyTank) {
+                        if (enemyTank.getDirect() == 0 || enemyTank.getDirect() == 2) {//敌人坦克是上下
                             //左上角
-                            if (this.getX()>= enemyTank.getX()
-                                    && this.getX()<= enemyTank.getX()+40
-                                    && this.getY()>= enemyTank.getY()//注意这是正确写法
-                                    && this.getY()<= enemyTank.getY()+60){
+                            if (this.getX() >= enemyTank.getX()
+                                    && this.getX() <= enemyTank.getX() + 40
+                                    && this.getY() >= enemyTank.getY()//注意这是正确写法
+                                    && this.getY() <= enemyTank.getY() + 60) {
                                 return true;
                             }
                             //左下角
-                            if (this.getX()>= enemyTank.getX()
-                                    && this.getX()<= enemyTank.getX()+40
-                                    && this.getY()+40>= enemyTank.getY()//注意这是正确写法
-                                    && this.getY()+40<= enemyTank.getY()+60){
+                            if (this.getX() >= enemyTank.getX()
+                                    && this.getX() <= enemyTank.getX() + 40
+                                    && this.getY() + 40 >= enemyTank.getY()//注意这是正确写法
+                                    && this.getY() + 40 <= enemyTank.getY() + 60) {
                                 return true;
                             }
                         }
 
-                        if (enemyTank.getDirect()==1 || enemyTank.getDirect()==3){//敌人坦克是左右
+                        if (enemyTank.getDirect() == 1 || enemyTank.getDirect() == 3) {//敌人坦克是左右
                             //左上角
-                            if (this.getX()>= enemyTank.getX()
-                                    && this.getX()<= enemyTank.getX()+60
-                                    && this.getY()>= enemyTank.getY()//注意这是正确写法
-                                    && this.getY()<= enemyTank.getY()+40){
+                            if (this.getX() >= enemyTank.getX()
+                                    && this.getX() <= enemyTank.getX() + 60
+                                    && this.getY() >= enemyTank.getY()//注意这是正确写法
+                                    && this.getY() <= enemyTank.getY() + 40) {
                                 return true;
                             }
                             //左下角
-                            if (this.getX()>= enemyTank.getX()
-                                    && this.getX()<= enemyTank.getX()+60
-                                    && this.getY()+40>= enemyTank.getY()//注意这是正确写法
-                                    && this.getY()+40<= enemyTank.getY()+40){
+                            if (this.getX() >= enemyTank.getX()
+                                    && this.getX() <= enemyTank.getX() + 60
+                                    && this.getY() + 40 >= enemyTank.getY()//注意这是正确写法
+                                    && this.getY() + 40 <= enemyTank.getY() + 40) {
                                 return true;
                             }
                         }
@@ -231,7 +233,7 @@ public class EnemyTank extends Tank implements Runnable {
             switch (getDirect()) {
                 case 0:
                     for (int i = 0; i < 30; i++) {//让敌人坦克走30布再变方向
-                        if (getY() > 0&& !isTouchEnemyTank()) {
+                        if (getY() > 0 && !isTouchEnemyTank()) {
                             moveUp();
                         }
                         try {
@@ -255,7 +257,7 @@ public class EnemyTank extends Tank implements Runnable {
                     break;
                 case 2:
                     for (int i = 0; i < 30; i++) {//让敌人坦克走30布再变方向
-                        if (getY() + 60 < 750&& !isTouchEnemyTank()) {
+                        if (getY() + 60 < 750 && !isTouchEnemyTank()) {
                             moveDown();
                         }
                         try {
@@ -267,7 +269,7 @@ public class EnemyTank extends Tank implements Runnable {
                     break;
                 case 3:
                     for (int i = 0; i < 30; i++) {//让敌人坦克走30布再变方向
-                        if (getX() > 0&& !isTouchEnemyTank()) {
+                        if (getX() > 0 && !isTouchEnemyTank()) {
                             moveLeft();
                         }
                         try {

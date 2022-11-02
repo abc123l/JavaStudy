@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
+import java.util.Scanner;
 
 /**
  * @author abc
@@ -11,8 +12,11 @@ import java.awt.event.WindowListener;
  */
 public class abcTankGame04 extends JFrame {
     MyPanel myPanel=null;
+    static Scanner scanner=new Scanner(System.in);
     public abcTankGame04() {
-        myPanel=new MyPanel();
+        System.out.println("是否恢复上局游戏? 1:新游戏 2：继续上局");
+        String key=scanner.next();
+        myPanel=new MyPanel(key);
         Thread thread = new Thread(myPanel);
         thread.start();
         this.add(myPanel);
@@ -30,6 +34,7 @@ public class abcTankGame04 extends JFrame {
     }
 
     public static void main(String[] args) {
+
         new abcTankGame04();
     }
 
