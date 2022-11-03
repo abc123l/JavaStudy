@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.io.File;
 import java.util.Vector;
 
 /**
@@ -30,9 +31,19 @@ public class MyPanel extends JPanel implements KeyListener, Runnable {
     int enemyTankSize = 3;
 
     public MyPanel(String key) {
-        nodes = Recorder.getNodesAndEnemyTankNum();
         hero = new Hero(500, 100);//初始化一个坦克
         hero.setSpeed(2);
+
+        File file = new File(Recorder.getRecordFile());
+        /**
+         *如果用户传入的是2则要判断记录文件存在不存在
+         * 需要注意的是：千万不能用key=="2"，这个必定返回false，地址不同
+         */
+        if ("2".equals(key) && !file.exists()) {
+            System.out.println("该目录下无记录文件，系统将自动开始新游戏");
+            key = "1";
+        }
+
         switch (key) {
             case "1":
                 Recorder.setAllEnemyTankNum(0);
@@ -55,6 +66,8 @@ public class MyPanel extends JPanel implements KeyListener, Runnable {
                 }
                 break;
             case "2":
+
+                nodes = Recorder.getNodesAndEnemyTankNum();
                 for (int i = 0; i < nodes.size(); i++) {
                     enemyTankSize = nodes.size();
                     Node node = nodes.get(i);
@@ -103,6 +116,9 @@ public class MyPanel extends JPanel implements KeyListener, Runnable {
         image1 = Toolkit.getDefaultToolkit().getImage(Panel.class.getResource("/bomb_1.gif"));
         image2 = Toolkit.getDefaultToolkit().getImage(Panel.class.getResource("/bomb_2.gif"));
         image3 = Toolkit.getDefaultToolkit().getImage(Panel.class.getResource("/bomb_3.gif"));
+
+        //播放指定的音乐
+        new AePlayWave("src//111.wav").start();
     }
 
     /**

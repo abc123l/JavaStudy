@@ -15,7 +15,13 @@ public class Recorder {
     private static FileWriter fw = null;
     private static BufferedWriter bw = null;
     private static BufferedReader br = null;
-    private static String recordFile = "e://temp/myRecord.txt";
+    //文件目录放在根目录下比较好，如果牵扯到移动别的系统可能没有权限操作E盘
+    //private static String recordFile = "e://temp/myRecord.txt";
+    private static String recordFile = "src//myRecord.txt";
+
+    public static String getRecordFile() {
+        return recordFile;
+    }
 
     public static int getAllEnemyTankNum() {
         return allEnemyTankNum;

@@ -49,7 +49,6 @@ public class Shot implements Runnable {
             if (!(x >= 0 && x <= 1000 && y >= 0 && y <= 750 && isAlive == true)) {
                 //这里的isAlive==true主要是判断是否碰到敌人坦克
                 isAlive = false;
-                System.out.println("子弹声明周期结束");
                 break;
             }
         }
