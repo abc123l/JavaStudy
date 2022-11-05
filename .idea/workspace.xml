@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cedd577-6c47-4b8a-af9a-c26cdcf9670a" name="Changes" comment="增加了单链表的增删改查和一些方法">
+    <list default="true" id="5cedd577-6c47-4b8a-af9a-c26cdcf9670a" name="Changes" comment="实现了使用双指针头插法反转单链表和用栈逆序打印单链表，注意第一个实现非常重要。另外，没有实现两个有序单链表的合并">
+      <change afterPath="$PROJECT_DIR$/src/com/abc/linkedlist_/DoubleLinkedListDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,17 +31,21 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "full.screen.before.presentation.mode": "false",
-    "last_opened_file_path": "D:/idea_java_projects/chapter19",
+    "last_opened_file_path": "D:/idea_java_projects/DataStructures",
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.SingleLinkedListDemo">
-    <configuration name="SingleLinkedListDemo (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.abc.linkedlist_.SingleLinkedListDemo" />
+  <component name="RunManager" selected="Application.DoubleLinkedListDemo">
+    <configuration name="DoubleLinkedListDemo (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abc.linkedlist_.DoubleLinkedListDemo" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
@@ -52,8 +57,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SingleLinkedListDemo (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.abc.linkedlist_.SingleLinkedListDemo" />
+    <configuration name="DoubleLinkedListDemo (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abc.linkedlist_.DoubleLinkedListDemo" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
@@ -65,8 +70,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SingleLinkedListDemo (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.abc.linkedlist_.SingleLinkedListDemo" />
+    <configuration name="DoubleLinkedListDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abc.linkedlist_.DoubleLinkedListDemo" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
@@ -91,12 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SparseArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.abc.sparsearray.SparseArray" />
+    <configuration name="TestStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abc.linkedlist_.TestStack" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.abc.sparsearray.*" />
+          <option name="PATTERN" value="com.abc.linkedlist_.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DoubleLinkedListDemo" />
+        <item itemvalue="Application.DoubleLinkedListDemo (2)" />
+        <item itemvalue="Application.DoubleLinkedListDemo (1)" />
         <item itemvalue="Application.SingleLinkedListDemo" />
-        <item itemvalue="Application.SingleLinkedListDemo (3)" />
-        <item itemvalue="Application.SingleLinkedListDemo (2)" />
-        <item itemvalue="Application.SingleLinkedListDemo (1)" />
-        <item itemvalue="Application.SparseArray" />
+        <item itemvalue="Application.TestStack" />
       </list>
     </recent_temporary>
   </component>
@@ -132,6 +137,10 @@
       <workItem from="1666617745367" duration="4078000" />
       <workItem from="1666699339507" duration="10268000" />
       <workItem from="1666778650325" duration="1647000" />
+      <workItem from="1666780433182" duration="219000" />
+      <workItem from="1667123360449" duration="9174000" />
+      <workItem from="1667219709209" duration="28000" />
+      <workItem from="1667644139895" duration="7640000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1666352034413</created>
@@ -203,7 +212,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666709473918</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="关闭了稀疏数组的输入流">
+      <created>1666780510828</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1666780510828</updated>
+    </task>
+    <task id="LOCAL-00012" summary="实现了使用双指针头插法反转单链表和用栈逆序打印单链表，注意第一个实现非常重要。另外，没有实现两个有序单链表的合并">
+      <created>1667134880979</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1667134880979</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,7 +254,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -252,6 +275,8 @@
     <MESSAGE value="增加了系数数组序列化和反序列化操作" />
     <MESSAGE value="加入了单项链表，初步实现了增加元素的功能" />
     <MESSAGE value="增加了单链表的增删改查和一些方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加了单链表的增删改查和一些方法" />
+    <MESSAGE value="关闭了稀疏数组的输入流" />
+    <MESSAGE value="实现了使用双指针头插法反转单链表和用栈逆序打印单链表，注意第一个实现非常重要。另外，没有实现两个有序单链表的合并" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现了使用双指针头插法反转单链表和用栈逆序打印单链表，注意第一个实现非常重要。另外，没有实现两个有序单链表的合并" />
   </component>
 </project>
