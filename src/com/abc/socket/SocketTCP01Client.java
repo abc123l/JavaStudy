@@ -1,6 +1,7 @@
 package com.abc.socket;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.InetAddress;
 import java.net.Socket;
@@ -20,7 +21,17 @@ public class SocketTCP01Client {
         OutputStream outputStream = socket.getOutputStream();
         //写入数据
         outputStream.write("hello, server".getBytes());
+
+        socket.shutdownOutput();//发送完数据之后应当有结束标记
+
+        InputStream inputStream = socket.getInputStream();
+        byte[] buffer =new byte[1024];
+        int readLen=0;
+        while ((readLen=inputStream.read(buffer))!=-1){
+            System.out.println(new String(buffer,0,readLen));
+        }
         //关流，释放资源
+        inputStream.close();
         outputStream.close();
         socket.close();
         System.out.println("客户端退出");

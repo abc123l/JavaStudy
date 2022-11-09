@@ -2,6 +2,7 @@ package com.abc.socket;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -27,8 +28,17 @@ public class SocketTCP01Server {
         while ((readLen=inputStream.read(buffer))!=-1){
             System.out.println(new String(buffer,0,readLen));//根据读取的实际长度
         }
+
+
+
+        OutputStream outputStream = socket.getOutputStream();
+        outputStream.write("hello, client".getBytes());
+
+        socket.shutdownOutput();//发送完数据之后应当有结束标记
+
         //关流
         inputStream.close();
+        outputStream.close();
         socket.close();
         serverSocket.close();//不要漏了它
     }
