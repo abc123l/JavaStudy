@@ -20,7 +20,7 @@ public class TCPFileUploadServer {
         byte[] bytes = StreamUtils.streamToByteArray(bis);
 
         //将文件写到指定目录下
-        String filePath="src//Acopy.png";
+        String filePath="src//A.png";
         BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(filePath));
         bos.write(bytes);
         bos.close();
