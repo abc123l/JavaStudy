@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cedd577-6c47-4b8a-af9a-c26cdcf9670a" name="Changes" comment="加入了双向链表的增删改查">
-      <change afterPath="$PROJECT_DIR$/src/com/abc/linkedlist_/Josepfu.java" afterDir="false" />
+    <list default="true" id="5cedd577-6c47-4b8a-af9a-c26cdcf9670a" name="Changes" comment="加入单向环形链表与约瑟夫问题的解法">
+      <change afterPath="$PROJECT_DIR$/src/com/abc/stack/ArrayStackDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,13 +43,13 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Josepfu">
-    <configuration name="Josepfu (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.abc.linkedlist_.Josepfu" />
+  <component name="RunManager" selected="Application.ArrayStackDemo">
+    <configuration name="ArrayStackDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abc.stack.ArrayStackDemo" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.abc.linkedlist_.*" />
+          <option name="PATTERN" value="com.abc.stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ArrayStackDemo" />
         <item itemvalue="Application.Josepfu" />
         <item itemvalue="Application.Josepfu (5)" />
         <item itemvalue="Application.Josepfu (4)" />
         <item itemvalue="Application.Josepfu (3)" />
-        <item itemvalue="Application.Josepfu (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -141,7 +141,11 @@
       <workItem from="1667123360449" duration="9174000" />
       <workItem from="1667219709209" duration="28000" />
       <workItem from="1667644139895" duration="8654000" />
-      <workItem from="1667731497657" duration="7557000" />
+      <workItem from="1667731497657" duration="8746000" />
+      <workItem from="1667823845205" duration="667000" />
+      <workItem from="1667883949568" duration="31000" />
+      <workItem from="1667912064897" duration="629000" />
+      <workItem from="1668247226851" duration="3399000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1666352034413</created>
@@ -234,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667652378452</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="加入单向环形链表与约瑟夫问题的解法">
+      <created>1667739218264</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1667739218264</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,6 +297,7 @@
     <MESSAGE value="关闭了稀疏数组的输入流" />
     <MESSAGE value="实现了使用双指针头插法反转单链表和用栈逆序打印单链表，注意第一个实现非常重要。另外，没有实现两个有序单链表的合并" />
     <MESSAGE value="加入了双向链表的增删改查" />
-    <option name="LAST_COMMIT_MESSAGE" value="加入了双向链表的增删改查" />
+    <MESSAGE value="加入单向环形链表与约瑟夫问题的解法" />
+    <option name="LAST_COMMIT_MESSAGE" value="加入单向环形链表与约瑟夫问题的解法" />
   </component>
 </project>
