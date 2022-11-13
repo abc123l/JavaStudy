@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cedd577-6c47-4b8a-af9a-c26cdcf9670a" name="Changes" comment="加入单向环形链表与约瑟夫问题的解法">
-      <change afterPath="$PROJECT_DIR$/src/com/abc/stack/ArrayStackDemo.java" afterDir="false" />
+    <list default="true" id="5cedd577-6c47-4b8a-af9a-c26cdcf9670a" name="Changes" comment="实现了栈">
+      <change afterPath="$PROJECT_DIR$/src/com/abc/stack/Calculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,21 +29,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/idea_java_projects/DataStructures&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "full.screen.before.presentation.mode": "false",
+    "last_opened_file_path": "D:/idea_java_projects/DataStructures",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
-  <component name="RunManager" selected="Application.ArrayStackDemo">
+}]]></component>
+  <component name="RunManager" selected="Application.Calculator">
     <configuration name="ArrayStackDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.abc.stack.ArrayStackDemo" />
       <module name="DataStructures" />
@@ -57,12 +57,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Josepfu (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.abc.linkedlist_.Josepfu" />
+    <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abc.stack.Calculator" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.abc.linkedlist_.*" />
+          <option name="PATTERN" value="com.abc.stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Calculator" />
         <item itemvalue="Application.ArrayStackDemo" />
         <item itemvalue="Application.Josepfu" />
         <item itemvalue="Application.Josepfu (5)" />
         <item itemvalue="Application.Josepfu (4)" />
-        <item itemvalue="Application.Josepfu (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -145,7 +145,8 @@
       <workItem from="1667823845205" duration="667000" />
       <workItem from="1667883949568" duration="31000" />
       <workItem from="1667912064897" duration="629000" />
-      <workItem from="1668247226851" duration="3399000" />
+      <workItem from="1668247226851" duration="3428000" />
+      <workItem from="1668334084071" duration="5621000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1666352034413</created>
@@ -245,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667739218264</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="实现了栈">
+      <created>1668252211700</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1668252211700</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,6 +306,7 @@
     <MESSAGE value="实现了使用双指针头插法反转单链表和用栈逆序打印单链表，注意第一个实现非常重要。另外，没有实现两个有序单链表的合并" />
     <MESSAGE value="加入了双向链表的增删改查" />
     <MESSAGE value="加入单向环形链表与约瑟夫问题的解法" />
-    <option name="LAST_COMMIT_MESSAGE" value="加入单向环形链表与约瑟夫问题的解法" />
+    <MESSAGE value="实现了栈" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现了栈" />
   </component>
 </project>
