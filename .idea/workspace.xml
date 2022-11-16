@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cedd577-6c47-4b8a-af9a-c26cdcf9670a" name="Changes" comment="实现了栈">
-      <change afterPath="$PROJECT_DIR$/src/com/abc/stack/Calculator.java" afterDir="false" />
+    <list default="true" id="5cedd577-6c47-4b8a-af9a-c26cdcf9670a" name="Changes" comment="用中缀表达式实现了计算器，需要注意：前缀表达式在实际计算式是先出栈的数对后出栈的数进行操作，而中缀和后缀表达式正好相反">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/abc/stack/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/abc/stack/Calculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +146,8 @@
       <workItem from="1667883949568" duration="31000" />
       <workItem from="1667912064897" duration="629000" />
       <workItem from="1668247226851" duration="3428000" />
-      <workItem from="1668334084071" duration="5621000" />
+      <workItem from="1668334084071" duration="5968000" />
+      <workItem from="1668560759244" duration="1333000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1666352034413</created>
@@ -253,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668252211700</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="用中缀表达式实现了计算器，需要注意：前缀表达式在实际计算式是先出栈的数对后出栈的数进行操作，而中缀和后缀表达式正好相反">
+      <created>1668340146370</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1668340146370</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,6 +315,7 @@
     <MESSAGE value="加入了双向链表的增删改查" />
     <MESSAGE value="加入单向环形链表与约瑟夫问题的解法" />
     <MESSAGE value="实现了栈" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现了栈" />
+    <MESSAGE value="用中缀表达式实现了计算器，需要注意：前缀表达式在实际计算式是先出栈的数对后出栈的数进行操作，而中缀和后缀表达式正好相反" />
+    <option name="LAST_COMMIT_MESSAGE" value="用中缀表达式实现了计算器，需要注意：前缀表达式在实际计算式是先出栈的数对后出栈的数进行操作，而中缀和后缀表达式正好相反" />
   </component>
 </project>

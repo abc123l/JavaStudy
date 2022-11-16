@@ -33,13 +33,14 @@ public class Calculator {
                         //然后把当前操作符入符号栈
                         operStack.push(ch);
                     }else {
-                        //该字符的优先级小于等于栈顶的优先级
+                        //该字符的优先级大于栈顶的优先级
                         operStack.push(ch);
                     }
-                }else {
+                }else {//符号栈为空
                     operStack.push(ch);
                 }
-            }else {//如果是数字直接入数栈
+            }else {//这个不能删除，否则符号位也进入了keepNum+=ch;
+                //如果是数字直接入数栈
                 //numStack.push(ch-48);//ASCII的'1'和1之间差了48
 
 
@@ -49,7 +50,7 @@ public class Calculator {
                 keepNum+=ch;
                 if (index==expression.length()-1){
                     numStack.push(Integer.parseInt(keepNum));
-                }else {
+                }else {//这个不能删，否则到最后一个字符（数字）还在判断下一位是不是符号位
 
                     if (numStack.isOper(expression.substring(index + 1, index + 2).charAt(0))) {
                         numStack.push(Integer.parseInt(keepNum));
