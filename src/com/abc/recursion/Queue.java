@@ -1,5 +1,8 @@
 package com.abc.recursion;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author abc
  * @version 1.0
@@ -10,11 +13,17 @@ public class Queue {
     int max=8;//8皇后
     //定义数组，数组的索引标识第几行，值为第几行要放在的第几列
     static int count=0;
+    static ArrayList<List<String>> result=new ArrayList<>();//用于存放最终结果
     int[] array = new int[max];
     public static void main(String[] args) {
         Queue queue = new Queue();
         queue.check(0);
         System.out.println("一共有"+count+"种解法");
+
+        //显示结果集合
+        for (List<String> strings : result) {
+            System.out.println(strings);
+        }
 
     }
 
@@ -23,7 +32,24 @@ public class Queue {
      * @param n 放第n个皇后
      */
     private void check(int n){
+        ArrayList<String> list = new ArrayList<>();
         if (n==max){
+            //这是显示成棋盘形式
+            for (int i = 0; i < n; i++) {//row
+                StringBuilder stringBuilder = new StringBuilder();
+                for (int j = 0; j < n; j++) {//column
+                    if (array[i]==j){//要在第i-1行的array[i]列放皇后，注意：array[i]为第array[i]-1列
+                        stringBuilder.append('Q');
+                    }else {
+                        stringBuilder.append('.');
+                    }
+                }
+                list.add(stringBuilder.toString());//添加行
+            }
+            result.add(list);//添加这一种解法
+
+
+            //打印结果数组，不太直观
             print();
             return;
         }
