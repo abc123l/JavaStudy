@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cedd577-6c47-4b8a-af9a-c26cdcf9670a" name="Changes" comment="实现了把中缀表达式的字符串形式转成了list形式，最后实现了把中缀表达式转成后缀表达式">
-      <change afterPath="$PROJECT_DIR$/src/com/abc/recursion/Maze.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/abc/recursion/Queue.java" afterDir="false" />
+    <list default="true" id="5cedd577-6c47-4b8a-af9a-c26cdcf9670a" name="Changes" comment="递归增加了汉诺塔">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/abc/stack/PolandNotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/abc/stack/PolandNotation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,26 +31,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "ToolWindowRun.ShowToolbar": "false",
-    "WebServerToolWindowFactoryState": "false",
-    "full.screen.before.presentation.mode": "false",
-    "last_opened_file_path": "D:/idea_java_projects/DataStructures",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ToolWindowRun.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/idea_java_projects/DataStructures&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Queue">
     <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.abc.stack.Calculator" />
@@ -69,11 +66,11 @@
       </method>
     </configuration>
     <configuration name="HanoiTower" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.abc.HanoiTower" />
+      <option name="MAIN_CLASS_NAME" value="com.abc.recursion.HanoiTower" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.abc.*" />
+          <option name="PATTERN" value="com.abc.recursion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -168,7 +165,8 @@
       <workItem from="1669465478428" duration="39000" />
       <workItem from="1670066535730" duration="6008000" />
       <workItem from="1670072938267" duration="138000" />
-      <workItem from="1670147955784" duration="9969000" />
+      <workItem from="1670147955784" duration="10211000" />
+      <workItem from="1670159566818" duration="11000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1666352034413</created>
@@ -303,7 +301,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669463441862</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="迷宫回溯+n皇后回溯&#10;重磅！！！">
+      <created>1670159349730</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1670159349730</updated>
+    </task>
+    <task id="LOCAL-00021" summary="递归增加了汉诺塔">
+      <created>1670159535803</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1670159535803</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,6 +373,8 @@
     <MESSAGE value="添加了一些注释" />
     <MESSAGE value="实现了逆波兰表达式的实现，理解了中缀表达式转为后缀表达式" />
     <MESSAGE value="实现了把中缀表达式的字符串形式转成了list形式，最后实现了把中缀表达式转成后缀表达式" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现了把中缀表达式的字符串形式转成了list形式，最后实现了把中缀表达式转成后缀表达式" />
+    <MESSAGE value="迷宫回溯+n皇后回溯&#10;重磅！！！" />
+    <MESSAGE value="递归增加了汉诺塔" />
+    <option name="LAST_COMMIT_MESSAGE" value="递归增加了汉诺塔" />
   </component>
 </project>
