@@ -163,11 +163,9 @@ class Operation{
                 result=DIV;
                 break;
             default:
-                //如果是"(" :result=0
                 break;
         }
         return result;
     }
-
 
 }
