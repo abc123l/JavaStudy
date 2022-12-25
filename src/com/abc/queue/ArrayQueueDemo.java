@@ -99,8 +99,8 @@ class ArrayQueue{
             System.out.println("队列为空，无法显示");
             return;
         }
-        for (int data :arr) {
-            System.out.printf("%d\t",data);
+        for(int i=front+1;i<=rear;i++){
+            System.out.print(arr[i]+"\t");
         }
         System.out.println();//换行
     }

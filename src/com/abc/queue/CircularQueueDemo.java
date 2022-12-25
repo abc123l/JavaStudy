@@ -60,7 +60,7 @@ public class CircularQueueDemo {
     }
     @Test
     public void test(){
-        System.out.println(2%5);
+        System.out.println(2%5);//2
     }
 }
 class CircularQueue{

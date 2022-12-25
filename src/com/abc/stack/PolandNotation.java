@@ -145,8 +145,8 @@ public class PolandNotation {
 class Operation{
     private static int ADD=1;
     private static int SUB=1;
-    private static int MUL=1;
-    private static int DIV=1;
+    private static int MUL=2;
+    private static int DIV=2;
     public static int getValue(String operation){
         int result=0;
         switch (operation){
