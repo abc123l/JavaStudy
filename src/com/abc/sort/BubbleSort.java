@@ -8,7 +8,7 @@ import java.util.Date;
  * @author abc
  * @version 1.0
  * 冒泡排序
- * 时间复杂度O(n^2)
+ * 时间复杂度O(n^2)，耗时6s左右
  */
 public class BubbleSort {
 
