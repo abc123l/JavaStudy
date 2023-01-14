@@ -1,19 +1,31 @@
 package com.abc.sort;
 
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Date;
 
 /**
  * @author abc
  * @version 1.0
- * 希尔排序
+ * 希尔排序，移位法很快
  */
 public class ShellSort {
     public static void main(String[] args) {
-        int[] arr={8,9,1,7,2,3,5,4,6,0};
-        shellSort(arr);
-
-
-
+//        int[] arr={8,9,1,7,2,3,5,4,6,0};
+//        shellSort2(arr);
+//        System.out.println(Arrays.toString(arr));
+        int[] arr=new int[8000000];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i]=(int) (Math.random()*80000);
+        }
+        Date date1 = new Date();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String time1 = simpleDateFormat.format(date1);
+        System.out.println(time1);
+        shellSort2(arr);
+        Date date2 = new Date();
+        String time2 = simpleDateFormat.format(date2);
+        System.out.println(time2);
 
     }
 
@@ -35,7 +47,7 @@ public class ShellSort {
                     }
                 }
             }
-            System.out.println("第"+(++count)+"轮希尔排序后："+Arrays.toString(arr));
+            //System.out.println("第"+(++count)+"轮希尔排序后："+Arrays.toString(arr));
         }
 
 
@@ -75,5 +87,27 @@ public class ShellSort {
         }
 
          */
+    }
+
+    /**
+     * 移位法的希尔排序牛逼
+     * @param arr
+     */
+    public static void shellSort2(int[] arr){
+        for (int gap = arr.length/2; gap >0 ; gap/=2) {
+            for (int i = gap; i < arr.length; i++) {//给arr[i]找位置，使用插入排序
+                int insertIndex=i;
+                int temp=arr[insertIndex];
+                while (insertIndex-gap>=0 && temp<arr[insertIndex-gap]){
+                    arr[insertIndex]=arr[insertIndex-gap];
+                    insertIndex-=gap;
+                }
+                if (insertIndex!=i) {//如果要插入的元素已经比有序表的所有元素都大，即已经在所需位置
+                    //则不交换
+                    arr[insertIndex] = temp;
+                }
+            }
+        }
+        //System.out.println(Arrays.toString(arr));
     }
 }
