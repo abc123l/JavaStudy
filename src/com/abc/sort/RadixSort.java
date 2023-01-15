@@ -1,16 +1,30 @@
 package com.abc.sort;
 
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Date;
 
 /**
  * @author abc
  * @version 1.0
- * 基数排序
+ * 基数排序，速度最快，但很耗内存，稳定的，不能排负数
  */
 public class RadixSort {
     public static void main(String[] args) {
-        int[] arr={53,3,542,748,14,214};
+//        int[] arr={53,3,542,748,14,214};
+//        radixSort(arr);
+        int[] arr=new int[8000000];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i]=(int) (Math.random()*8000000);
+        }
+        Date date1 = new Date();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String date1Str = simpleDateFormat.format(date1);
+        System.out.println(date1Str);
         radixSort(arr);
+        Date date2 = new Date();
+        String date2Str = simpleDateFormat.format(date2);
+        System.out.println(date2Str);
     }
     private static void radixSort(int[] arr){
         int max=arr[0];
@@ -42,7 +56,7 @@ public class RadixSort {
                     bucketElementCounts[j]=0;//置0，便于下一轮使用
                 }
             }
-            System.out.println("第"+(i+1)+"轮后："+ Arrays.toString(arr));
+            //System.out.println("第"+(i+1)+"轮后："+ Arrays.toString(arr));
         }
 
     }
