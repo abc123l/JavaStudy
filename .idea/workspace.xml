@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cedd577-6c47-4b8a-af9a-c26cdcf9670a" name="Changes" comment="哈希表代码实现">
-      <change afterPath="$PROJECT_DIR$/src/com/abc/tree/BinaryTreeDemo.java" afterDir="false" />
+    <list default="true" id="5cedd577-6c47-4b8a-af9a-c26cdcf9670a" name="Changes" comment="二叉树创建及前序中序后序遍历">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/abc/tree/BinaryTreeDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/abc/tree/BinaryTreeDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +54,19 @@
   }
 }</component>
   <component name="RunManager" selected="Application.BinaryTreeDemo">
+    <configuration name="BinaryTreeDemo (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abc.tree.BinaryTreeDemo" />
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.abc.tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BinaryTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.abc.tree.BinaryTreeDemo" />
       <module name="DataStructures" />
@@ -106,26 +119,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HashTabDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.abc.hashtab.HashTabDemo" />
-      <module name="DataStructures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.abc.hashtab.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.BinaryTreeDemo" />
+        <item itemvalue="Application.BinaryTreeDemo (1)" />
         <item itemvalue="Application.HashTab" />
         <item itemvalue="Application.HashTabDemo (3)" />
         <item itemvalue="Application.HashTabDemo (2)" />
-        <item itemvalue="Application.HashTabDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +220,9 @@
       <workItem from="1673964112598" duration="74000" />
       <workItem from="1673964218832" duration="24000" />
       <workItem from="1674012359472" duration="11887000" />
-      <workItem from="1674185316677" duration="8752000" />
+      <workItem from="1674185316677" duration="8830000" />
+      <workItem from="1674200190927" duration="147000" />
+      <workItem from="1674350672300" duration="8275000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1666352034413</created>
@@ -439,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674023365116</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="二叉树创建及前序中序后序遍历">
+      <created>1674200098678</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1674200098678</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -480,7 +489,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="实现了环形队列，相关技术参考大话数据结构112页" />
     <MESSAGE value="增加了系数数组序列化和反序列化操作" />
     <MESSAGE value="加入了单项链表，初步实现了增加元素的功能" />
     <MESSAGE value="增加了单链表的增删改查和一些方法" />
@@ -505,7 +513,8 @@
     <MESSAGE value="顺序查找+二分查找" />
     <MESSAGE value="插值二分查找" />
     <MESSAGE value="哈希表代码实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="哈希表代码实现" />
+    <MESSAGE value="二叉树创建及前序中序后序遍历" />
+    <option name="LAST_COMMIT_MESSAGE" value="二叉树创建及前序中序后序遍历" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -514,6 +523,11 @@
           <url>file://$PROJECT_DIR$/src/com/abc/search/InsertSearch.java</url>
           <line>15</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/abc/tree/BinaryTreeDemo.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
