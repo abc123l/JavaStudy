@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cedd577-6c47-4b8a-af9a-c26cdcf9670a" name="Changes" comment="二叉树查找节点和删除节点">
-      <change afterPath="$PROJECT_DIR$/src/com/abc/tree/ArrBinaryTreeDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/abc/tree/threadedbinarytree/ThreadedTreeDemo.java" afterDir="false" />
+    <list default="true" id="5cedd577-6c47-4b8a-af9a-c26cdcf9670a" name="Changes" comment="顺序存储二叉树+线索化二叉树">
+      <change afterPath="$PROJECT_DIR$/src/com/abc/sort/HeapSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/abc/tree/BinaryTreeDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/abc/tree/BinaryTreeDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/abc/tree/threadedbinarytree/ThreadedTreeDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/abc/tree/threadedbinarytree/ThreadedTreeDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +54,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.ArrBinaryTreeDemo (1)">
+  <component name="RunManager" selected="Application.ThreadedTreeDemo">
     <configuration name="ArrBinaryTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.abc.tree.ArrBinaryTreeDemo" />
       <module name="DataStructures" />
@@ -121,12 +120,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ThreadedTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abc.tree.threadedbinarytree.ThreadedTreeDemo" />
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.abc.tree.threadedbinarytree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ArrBinaryTreeDemo (1)" />
+        <item itemvalue="Application.ThreadedTreeDemo" />
         <item itemvalue="Application.ArrBinaryTreeDemo" />
         <item itemvalue="Application.BinaryTreeDemo" />
-        <item itemvalue="Application.BinaryTreeDemo (1)" />
         <item itemvalue="Application.HashTab" />
       </list>
     </recent_temporary>
@@ -230,7 +241,8 @@
       <workItem from="1674365909186" duration="349000" />
       <workItem from="1674366275263" duration="124000" />
       <workItem from="1674367832911" duration="83000" />
-      <workItem from="1674439713368" duration="9053000" />
+      <workItem from="1674439713368" duration="9099000" />
+      <workItem from="1674540693760" duration="7766000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1666352034413</created>
@@ -463,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674365683910</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="顺序存储二叉树+线索化二叉树">
+      <created>1674457136516</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1674457136516</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,7 +523,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="加入了单项链表，初步实现了增加元素的功能" />
     <MESSAGE value="增加了单链表的增删改查和一些方法" />
     <MESSAGE value="关闭了稀疏数组的输入流" />
     <MESSAGE value="实现了使用双指针头插法反转单链表和用栈逆序打印单链表，注意第一个实现非常重要。另外，没有实现两个有序单链表的合并" />
@@ -529,7 +547,8 @@
     <MESSAGE value="哈希表代码实现" />
     <MESSAGE value="二叉树创建及前序中序后序遍历" />
     <MESSAGE value="二叉树查找节点和删除节点" />
-    <option name="LAST_COMMIT_MESSAGE" value="二叉树查找节点和删除节点" />
+    <MESSAGE value="顺序存储二叉树+线索化二叉树" />
+    <option name="LAST_COMMIT_MESSAGE" value="顺序存储二叉树+线索化二叉树" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
