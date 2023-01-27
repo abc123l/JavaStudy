@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cedd577-6c47-4b8a-af9a-c26cdcf9670a" name="Changes" comment="堆排序+和赫夫曼树的创建">
-      <change afterPath="$PROJECT_DIR$/src/com/abc/huffmancode/HuffmanCode.java" afterDir="false" />
+    <list default="true" id="5cedd577-6c47-4b8a-af9a-c26cdcf9670a" name="Changes" comment="赫夫曼编码1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/abc/huffmancode/HuffmanCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/abc/huffmancode/HuffmanCode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,38 +54,12 @@
   }
 }</component>
   <component name="RunManager" selected="Application.HuffmanCode">
-    <configuration name="ArrBinaryTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.abc.tree.ArrBinaryTreeDemo" />
+    <configuration name="Byte2String" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abc.mytry.Byte2String" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.abc.tree.threadedbinarytree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ArrBinaryTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.abc.tree.ArrBinaryTreeDemo" />
-      <module name="DataStructures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.abc.tree.threadedbinarytree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BinaryTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.abc.tree.BinaryTreeDemo" />
-      <module name="DataStructures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.abc.tree.threadedbinarytree.*" />
+          <option name="PATTERN" value="com.abc.mytry.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,12 +106,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadedTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.abc.tree.threadedbinarytree.ThreadedTreeDemo" />
+    <configuration name="com.abc.mytry.HuffmanCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abc.mytry.HuffmanCode" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.abc.tree.threadedbinarytree.*" />
+          <option name="PATTERN" value="com.abc.mytry.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,10 +122,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.HuffmanCode" />
+        <item itemvalue="Application.Byte2String" />
+        <item itemvalue="Application.com.abc.mytry.HuffmanCode" />
         <item itemvalue="Application.HuffmanTree" />
         <item itemvalue="Application.HeapSort" />
-        <item itemvalue="Application.ThreadedTreeDemo" />
-        <item itemvalue="Application.ArrBinaryTreeDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -260,7 +234,9 @@
       <workItem from="1674551107631" duration="29000" />
       <workItem from="1674551154593" duration="735000" />
       <workItem from="1674623720824" duration="9040000" />
-      <workItem from="1674706942973" duration="8127000" />
+      <workItem from="1674706942973" duration="8369000" />
+      <workItem from="1674729232380" duration="2705000" />
+      <workItem from="1674794827547" duration="24532000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1666352034413</created>
@@ -514,7 +490,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674635087221</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="赫夫曼编码1">
+      <created>1674725596638</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1674725596638</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -555,7 +538,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="实现了使用双指针头插法反转单链表和用栈逆序打印单链表，注意第一个实现非常重要。另外，没有实现两个有序单链表的合并" />
     <MESSAGE value="加入了双向链表的增删改查" />
     <MESSAGE value="加入单向环形链表与约瑟夫问题的解法" />
     <MESSAGE value="实现了栈" />
@@ -580,7 +562,8 @@
     <MESSAGE value="顺序存储二叉树+线索化二叉树" />
     <MESSAGE value="遍历中序线索化二叉树&#10;堆排序（未做）" />
     <MESSAGE value="堆排序+和赫夫曼树的创建" />
-    <option name="LAST_COMMIT_MESSAGE" value="堆排序+和赫夫曼树的创建" />
+    <MESSAGE value="赫夫曼编码1" />
+    <option name="LAST_COMMIT_MESSAGE" value="赫夫曼编码1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -599,6 +582,16 @@
           <url>file://$PROJECT_DIR$/src/com/abc/tree/ArrBinaryTreeDemo.java</url>
           <line>13</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/abc/huffmancode/HuffmanCode.java</url>
+          <line>104</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/abc/huffmancode/HuffmanCode.java</url>
+          <line>163</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
