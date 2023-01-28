@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cedd577-6c47-4b8a-af9a-c26cdcf9670a" name="Changes" comment="赫夫曼编码1">
+    <list default="true" id="5cedd577-6c47-4b8a-af9a-c26cdcf9670a" name="Changes" comment="赫夫曼编码2(压缩和解压完成)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/abc/huffmancode/HuffmanCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/abc/huffmancode/HuffmanCode.java" afterDir="false" />
     </list>
@@ -53,7 +53,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.HuffmanCode">
+  <component name="RunManager" selected="Application.com.abc.mytry.HuffmanCode">
     <configuration name="Byte2String" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.abc.mytry.Byte2String" />
       <module name="DataStructures" />
@@ -121,9 +121,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.abc.mytry.HuffmanCode" />
         <item itemvalue="Application.HuffmanCode" />
         <item itemvalue="Application.Byte2String" />
-        <item itemvalue="Application.com.abc.mytry.HuffmanCode" />
         <item itemvalue="Application.HuffmanTree" />
         <item itemvalue="Application.HeapSort" />
       </list>
@@ -236,7 +236,9 @@
       <workItem from="1674623720824" duration="9040000" />
       <workItem from="1674706942973" duration="8369000" />
       <workItem from="1674729232380" duration="2705000" />
-      <workItem from="1674794827547" duration="24532000" />
+      <workItem from="1674794827547" duration="24973000" />
+      <workItem from="1674872288459" duration="481000" />
+      <workItem from="1674883778536" duration="13025000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1666352034413</created>
@@ -497,7 +499,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674725596638</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="赫夫曼编码2(压缩和解压完成)">
+      <created>1674823615508</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1674823615508</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -538,7 +547,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="加入了双向链表的增删改查" />
     <MESSAGE value="加入单向环形链表与约瑟夫问题的解法" />
     <MESSAGE value="实现了栈" />
     <MESSAGE value="用中缀表达式实现了计算器，需要注意：前缀表达式在实际计算式是先出栈的数对后出栈的数进行操作，而中缀和后缀表达式正好相反" />
@@ -563,7 +571,8 @@
     <MESSAGE value="遍历中序线索化二叉树&#10;堆排序（未做）" />
     <MESSAGE value="堆排序+和赫夫曼树的创建" />
     <MESSAGE value="赫夫曼编码1" />
-    <option name="LAST_COMMIT_MESSAGE" value="赫夫曼编码1" />
+    <MESSAGE value="赫夫曼编码2(压缩和解压完成)" />
+    <option name="LAST_COMMIT_MESSAGE" value="赫夫曼编码2(压缩和解压完成)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -585,14 +594,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/abc/huffmancode/HuffmanCode.java</url>
-          <line>104</line>
-          <option name="timeStamp" value="7" />
+          <line>139</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/abc/huffmancode/HuffmanCode.java</url>
-          <line>163</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StringIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="10" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

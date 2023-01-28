@@ -1,5 +1,6 @@
 package com.abc.huffmancode;
 
+import java.io.*;
 import java.util.*;
 
 /**
@@ -13,11 +14,13 @@ public class HuffmanCode {
     //存储路径时用StringBuilder
     static Map<Byte, String> huffmanCodes = new HashMap();
     static StringBuilder stringBuilder = new StringBuilder();
-    static int compensationZeroNumber;
+    static int compensationZeroNumber;//zipCode的最后一个byte是正数的时候二进制前面可能有0，如果是0的话前面也可能有0
 
     public static void main(String[] args) {
+        /*
         //String content = "i like like like java do you like a java";
-        String content="Then i go to play.";
+        String content="This is the end of the world!";
+        //String content="hi";
         byte[] contentBytes = content.getBytes();
         byte[] zipCode = huffmanZip(contentBytes);
         System.out.println("字节数组："+Arrays.toString(zipCode));
@@ -26,7 +29,79 @@ public class HuffmanCode {
 
         byte[] originalBytes = decode(huffmanCodes, zipCode);
         System.out.println(new String(originalBytes));
+
+         */
+
+//        String srcFile="d://a.bmp";
+//        String destFile="d://output.zip";
+//        zipFile(srcFile,destFile);
+        String zipFile="d://output.zip";
+        String destFile="d://src2.bmp";
+        unzipFile(zipFile,destFile);
     }
+
+    /**
+     * 压缩文件
+     * @param srcFile 源文件目录
+     * @param destFile 目的文件目录
+     */
+    public static void zipFile(String srcFile,String destFile){
+        FileInputStream is=null;
+        OutputStream os=null;
+        ObjectOutputStream oos=null;
+        try {
+            is = new FileInputStream(srcFile);
+            byte[] bytes = new byte[is.available()];//和源文件大小一样的数组
+            //把文件度到数组里面去
+            is.read(bytes);
+            //拿到要发送的字节数组
+            byte[] zipCode = huffmanZip(bytes);
+            //创建输出流
+            os=new FileOutputStream(destFile);
+            oos = new ObjectOutputStream(os);
+            oos.writeObject(zipCode);//写入发送的字节数组
+            oos.writeObject(huffmanCodes);//写入密码本
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        } finally {
+            try {
+                is.close();
+                os.close();
+                oos.close();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
+    public static void unzipFile(String zipFile,String destFile){
+        ObjectInputStream ois=null;
+        FileOutputStream fos=null;
+        try {
+            ois=new ObjectInputStream(new FileInputStream(zipFile));
+            //获取到字节数组和密码本
+            byte[] zipCode=(byte[]) ois.readObject();
+            Map<Byte,String> huffmanCode=(Map<Byte,String>) ois.readObject();
+            //解码得到原始数组
+            byte[] originalBytes = decode(huffmanCode, zipCode);
+
+            //写到目标文件
+            fos=new FileOutputStream(destFile);
+            fos.write(originalBytes);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        } finally {
+            try {
+                fos.close();//关流和原来打开方向相反
+                ois.close();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+
+        }
+    }
+
+
+
     /*
     数据解压：
     1. 将zipCode转成1010100010111111110010001011....
@@ -47,7 +122,7 @@ public class HuffmanCode {
             boolean flag=(i== zipCode.length-1);
             stringBuilder.append(byteToBitString(b,!flag));//到最后一个时才会考虑补位
         }
-        System.out.println("解码二进制数："+stringBuilder);
+        System.out.println("解码二进制数："+stringBuilder+"长度为："+stringBuilder.length());
         //利用字典把二进制字符串进行解码, 首先反转一下字典的key和value方便查询
         Map<String, Byte> map = new HashMap<>();
         Set<Map.Entry<Byte, String>> entries = huffmanCodes.entrySet();
@@ -102,13 +177,17 @@ public class HuffmanCode {
             return str.substring(str.length() - 8);
         }else {//只有是zipCode的最后一个元素且它为正数时才直接返回，不补位
             String compensationZero="";
-            if (compensationZeroNumber>0){
+            if (compensationZeroNumber>0 ){
 
                 for (int i = 0; i < compensationZeroNumber; i++) {
                     compensationZero=compensationZero+"0";
                 }
             }
-            return compensationZero+str;
+            if (temp!=0) {
+                return compensationZero + str;
+            }else {
+                return compensationZero;
+            }
         }
 
     }
@@ -145,7 +224,7 @@ public class HuffmanCode {
             stringBuilder.append(huffmanCodes.get(b));
         }
         //将10101000101111111100.....转成byte[]数组，首先计算要多少个字节来存储
-        System.out.println("原始二进制数："+stringBuilder);
+        System.out.println("原始二进制数："+stringBuilder+"长度为："+stringBuilder.length());
         int len;
         if (stringBuilder.length() % 8 == 0) {
             len = stringBuilder.length() / 8;
