@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cedd577-6c47-4b8a-af9a-c26cdcf9670a" name="Changes" comment="赫夫曼编码2(压缩和解压完成)">
+    <list default="true" id="5cedd577-6c47-4b8a-af9a-c26cdcf9670a" name="Changes" comment="二叉排序树的创建和查找">
+      <change afterPath="$PROJECT_DIR$/src/com/abc/binarysorttree/BinarySortTreeDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/abc/huffmancode/HuffmanCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/abc/huffmancode/HuffmanCode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,13 +53,13 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.com.abc.mytry.HuffmanCode">
-    <configuration name="Byte2String" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.abc.mytry.Byte2String" />
+  <component name="RunManager" selected="Application.BinarySortTreeDemo">
+    <configuration name="BinarySortTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abc.binarysorttree.BinarySortTreeDemo" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.abc.mytry.*" />
+          <option name="PATTERN" value="com.abc.binarysorttree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -67,12 +67,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HeapSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.abc.sort.HeapSort" />
+    <configuration name="Byte2String" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abc.mytry.Byte2String" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.abc.sort.*" />
+          <option name="PATTERN" value="com.abc.mytry.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BinarySortTreeDemo" />
         <item itemvalue="Application.com.abc.mytry.HuffmanCode" />
         <item itemvalue="Application.HuffmanCode" />
         <item itemvalue="Application.Byte2String" />
         <item itemvalue="Application.HuffmanTree" />
-        <item itemvalue="Application.HeapSort" />
       </list>
     </recent_temporary>
   </component>
@@ -238,7 +238,9 @@
       <workItem from="1674729232380" duration="2705000" />
       <workItem from="1674794827547" duration="24973000" />
       <workItem from="1674872288459" duration="481000" />
-      <workItem from="1674883778536" duration="13025000" />
+      <workItem from="1674883778536" duration="13192000" />
+      <workItem from="1674900051332" duration="33000" />
+      <workItem from="1674965709256" duration="5628000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1666352034413</created>
@@ -506,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674823615508</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="赫夫曼编码3(文件压缩和解压)+修复了若干bug">
+      <created>1674899954621</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1674899954621</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -547,8 +556,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="加入单向环形链表与约瑟夫问题的解法" />
-    <MESSAGE value="实现了栈" />
     <MESSAGE value="用中缀表达式实现了计算器，需要注意：前缀表达式在实际计算式是先出栈的数对后出栈的数进行操作，而中缀和后缀表达式正好相反" />
     <MESSAGE value="添加了一些注释" />
     <MESSAGE value="实现了逆波兰表达式的实现，理解了中缀表达式转为后缀表达式" />
@@ -572,7 +579,9 @@
     <MESSAGE value="堆排序+和赫夫曼树的创建" />
     <MESSAGE value="赫夫曼编码1" />
     <MESSAGE value="赫夫曼编码2(压缩和解压完成)" />
-    <option name="LAST_COMMIT_MESSAGE" value="赫夫曼编码2(压缩和解压完成)" />
+    <MESSAGE value="赫夫曼编码3(文件压缩和解压)+修复了若干bug" />
+    <MESSAGE value="二叉排序树的创建和查找" />
+    <option name="LAST_COMMIT_MESSAGE" value="二叉排序树的创建和查找" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
