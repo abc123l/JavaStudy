@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5cedd577-6c47-4b8a-af9a-c26cdcf9670a" name="Changes" comment="二叉排序树的创建和查找">
-      <change afterPath="$PROJECT_DIR$/src/com/abc/binarysorttree/BinarySortTreeDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/abc/binarysorttree/BinarySortTreeDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/abc/binarysorttree/BinarySortTreeDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +240,8 @@
       <workItem from="1674872288459" duration="481000" />
       <workItem from="1674883778536" duration="13192000" />
       <workItem from="1674900051332" duration="33000" />
-      <workItem from="1674965709256" duration="5628000" />
+      <workItem from="1674965709256" duration="5642000" />
+      <workItem from="1675044746978" duration="4940000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1666352034413</created>
@@ -515,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674899954621</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="二叉排序树的创建和查找">
+      <created>1674976897429</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1674976897429</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
