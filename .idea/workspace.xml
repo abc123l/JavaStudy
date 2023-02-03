@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cedd577-6c47-4b8a-af9a-c26cdcf9670a" name="Changes" comment="二叉排序树的删除">
-      <change afterPath="$PROJECT_DIR$/src/com/abc/avl/AVLTreeDemo.java" afterDir="false" />
+    <list default="true" id="5cedd577-6c47-4b8a-af9a-c26cdcf9670a" name="Changes" comment="平衡二叉树">
+      <change afterPath="$PROJECT_DIR$/src/com/abc/graph/GraphListDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,28 +32,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "ToolWindowRun.ShowToolbar": "false",
-    "WebServerToolWindowFactoryState": "false",
-    "full.screen.before.presentation.mode": "false",
-    "last_opened_file_path": "D:/idea_java_projects/DataStructures",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ToolWindowRun.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/idea_java_projects/DataStructures&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.AVLTreeDemo (2)">
+}</component>
+  <component name="RunManager" selected="Application.GraphListDemo">
     <configuration name="AVLTreeDemo (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.abc.avl.AVLTreeDemo" />
       <module name="DataStructures" />
@@ -93,12 +93,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinarySortTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.abc.binarysorttree.BinarySortTreeDemo" />
+    <configuration name="Graph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abc.graph.Graph" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.abc.binarysorttree.*" />
+          <option name="PATTERN" value="com.abc.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,12 +106,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.abc.mytry.HuffmanCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.abc.mytry.HuffmanCode" />
+    <configuration name="GraphListDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abc.graph.GraphListDemo" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.abc.mytry.*" />
+          <option name="PATTERN" value="com.abc.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GraphListDemo" />
+        <item itemvalue="Application.Graph" />
         <item itemvalue="Application.AVLTreeDemo (2)" />
         <item itemvalue="Application.AVLTreeDemo (1)" />
         <item itemvalue="Application.AVLTreeDemo" />
-        <item itemvalue="Application.BinarySortTreeDemo" />
-        <item itemvalue="Application.com.abc.mytry.HuffmanCode" />
       </list>
     </recent_temporary>
   </component>
@@ -244,7 +244,12 @@
       <workItem from="1675044746978" duration="7123000" />
       <workItem from="1675059584456" duration="32000" />
       <workItem from="1675059625528" duration="136000" />
-      <workItem from="1675132921227" duration="9166000" />
+      <workItem from="1675132921227" duration="9512000" />
+      <workItem from="1675229834380" duration="2589000" />
+      <workItem from="1675234992979" duration="158000" />
+      <workItem from="1675250131001" duration="1923000" />
+      <workItem from="1675309664818" duration="3218000" />
+      <workItem from="1675401179935" duration="13382000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1666352034413</created>
@@ -540,7 +545,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675059499442</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="平衡二叉树">
+      <created>1675151759375</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1675151759375</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -581,7 +593,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加了一些注释" />
     <MESSAGE value="实现了逆波兰表达式的实现，理解了中缀表达式转为后缀表达式" />
     <MESSAGE value="实现了把中缀表达式的字符串形式转成了list形式，最后实现了把中缀表达式转成后缀表达式" />
     <MESSAGE value="迷宫回溯+n皇后回溯&#10;重磅！！！" />
@@ -606,7 +617,8 @@
     <MESSAGE value="赫夫曼编码3(文件压缩和解压)+修复了若干bug" />
     <MESSAGE value="二叉排序树的创建和查找" />
     <MESSAGE value="二叉排序树的删除" />
-    <option name="LAST_COMMIT_MESSAGE" value="二叉排序树的删除" />
+    <MESSAGE value="平衡二叉树" />
+    <option name="LAST_COMMIT_MESSAGE" value="平衡二叉树" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
