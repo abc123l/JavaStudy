@@ -22,7 +22,7 @@ public class PrimAlgorithm {
         MST mst = new MST();
         mst.createGraph(graph,vertices,data,weight);
         mst.showGraph(graph);
-
+        mst.prim(graph,0);
     }
 }
 
@@ -51,6 +51,37 @@ class MST{
             System.out.println(Arrays.toString(link));
         }
 
+    }
+
+    /**
+     *
+     * @param graph
+     * @param v 从哪个顶点开始生成最小生成树 0->'A'
+     */
+    public void prim(MGraph graph,int v){
+        int[] visited=new int[graph.vertices];//0表示为访问过，1表示访问过
+        //把这个节点标记为以访问
+        visited[v]=1;
+        //记录两个顶点的下标
+        int h1=-1;
+        int h2=-1;
+        int minWeight=9999;//遍历过程中会不断更新
+        for (int k = 1; k < graph.vertices; k++) {//vertices个顶点生成vertices-1条边
+            //在子图的所有节点中寻找与哪个为访问过的节点最近
+            for (int i = 0; i < graph.vertices; i++) {//子图里的节点（已访问）
+                for (int j = 0; j < graph.vertices; j++) {//未访问的节点
+                    if (visited[i]==1 && visited[j]==0 && graph.weight[i][j]<minWeight){
+                        minWeight=graph.weight[i][j];
+                        h1=i;
+                        h2=j;
+                    }
+                }
+            }
+            //找到了在这一次搜索中最小的那条边
+            System.out.println("边<"+graph.data[h1]+","+graph.data[h2]+"> 权值:"+graph.weight[h1][h2]);
+            visited[h2]=1;//将找到的未访问的节点标记已访问
+            minWeight=9999;//下一次搜索要重置minWeight
+        }
     }
 
 }

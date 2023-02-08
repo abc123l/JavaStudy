@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cedd577-6c47-4b8a-af9a-c26cdcf9670a" name="Changes" comment="KMP字符串匹配">
-      <change afterPath="$PROJECT_DIR$/src/com/abc/algorithms/greedy/GreedyAlgorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/abc/algorithms/prim/PrimAlgorithm.java" afterDir="false" />
+    <list default="true" id="5cedd577-6c47-4b8a-af9a-c26cdcf9670a" name="Changes" comment="贪心算法集合覆盖问题+初始prim">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/abc/algorithms/prim/PrimAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/abc/algorithms/prim/PrimAlgorithm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,28 +32,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;ToolWindowRun.ShowToolbar&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/idea_java_projects/DataStructures&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ToolWindowRun.ShowToolbar": "false",
+    "WebServerToolWindowFactoryState": "false",
+    "full.screen.before.presentation.mode": "false",
+    "last_opened_file_path": "D:/idea_java_projects/DataStructures",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.obiscr.chatgpt.settings.ChatGPTSettingsPanel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Application.PrimAlgorithm">
+}]]></component>
+  <component name="RunManager" selected="Application.MSTWithPrim">
     <configuration name="Greedy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.abc.algorithms.mytry.Greedy" />
       <module name="D&amp;A" />
@@ -81,12 +80,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KMPDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.abc.algorithms.kmp.KMPDemo" />
+    <configuration name="MSTWithPrim" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abc.algorithms.mytry.MSTWithPrim" />
       <module name="D&amp;A" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.abc.algorithms.kmp.*" />
+          <option name="PATTERN" value="com.abc.algorithms.mytry.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrimAlgorithm (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abc.algorithms.prim.PrimAlgorithm" />
+      <module name="D&amp;A" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.abc.algorithms.prim.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,26 +119,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.abc.algorithms.mytry.KMPDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.abc.algorithms.mytry.KMPDemo" />
-      <module name="D&amp;A" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.abc.algorithms.mytry.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MSTWithPrim" />
+        <item itemvalue="Application.PrimAlgorithm (1)" />
         <item itemvalue="Application.PrimAlgorithm" />
         <item itemvalue="Application.Greedy" />
         <item itemvalue="Application.GreedyAlgorithm" />
-        <item itemvalue="Application.com.abc.algorithms.mytry.KMPDemo" />
-        <item itemvalue="Application.KMPDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -261,7 +260,8 @@
       <workItem from="1675652141207" duration="9142000" />
       <workItem from="1675665352456" duration="34000" />
       <workItem from="1675737767299" duration="4769000" />
-      <workItem from="1675742968903" duration="5046000" />
+      <workItem from="1675742968903" duration="5320000" />
+      <workItem from="1675821432286" duration="8423000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1666352034413</created>
@@ -592,7 +592,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675665291867</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="贪心算法集合覆盖问题+初始prim">
+      <created>1675750798381</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1675750798381</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -633,7 +640,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="修正了文件位置" />
     <MESSAGE value="增加了n皇后问题的可视化效果" />
     <MESSAGE value="修改了若干bug" />
     <MESSAGE value="冒泡排序及优化，当进入一趟排序后发现没有元素进行交换就已经是有序的，退出即可" />
@@ -658,7 +664,8 @@
     <MESSAGE value="深度优先搜索+非递归形式的二分查找" />
     <MESSAGE value="背包问题求解" />
     <MESSAGE value="KMP字符串匹配" />
-    <option name="LAST_COMMIT_MESSAGE" value="KMP字符串匹配" />
+    <MESSAGE value="贪心算法集合覆盖问题+初始prim" />
+    <option name="LAST_COMMIT_MESSAGE" value="贪心算法集合覆盖问题+初始prim" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -699,5 +706,9 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
