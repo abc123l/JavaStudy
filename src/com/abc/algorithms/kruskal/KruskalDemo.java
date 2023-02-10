@@ -9,9 +9,13 @@ import java.util.Collections;
 /**
  * @author abc
  * @version 1.0
+ * 修路问题
+ * 建议看mytry更简洁
  */
 public class KruskalDemo {
     private int edgeNum;//边的个数
+
+
     private char[] vertices;//顶点集合
     private int[][] matrix;//邻接矩阵
     private static final int INF=Integer.MAX_VALUE;//表示两条边不联通

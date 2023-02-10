@@ -18,17 +18,17 @@ public class MSTWithPrim {
                 {9999,9999,9999,4,5,9999,6},
                 {2,3,9999,9999,4,6,9999}
         };
-        IGraph iGraph = new IGraph(vertices, data, weight);
+        PrimGraph iGraph = new PrimGraph(vertices, data, weight);
         iGraph.showGraph();
         iGraph.createMSTWithPrim(0);
     }
 }
-class IGraph{
+class PrimGraph {
     int vertices;
     char[] data;
     int[][] weight;
 
-    public IGraph(int vertices, char[] data, int[][] weight) {
+    public PrimGraph(int vertices, char[] data, int[][] weight) {
         this.vertices = vertices;
         this.data = data;
         this.weight = weight;
