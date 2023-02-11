@@ -6,6 +6,7 @@ import java.util.Collections;
 /**
  * @author abc
  * @version 1.0
+ * 修路问题
  */
 public class KruskalAlgorithm {
     char[] vertices;

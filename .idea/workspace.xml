@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cedd577-6c47-4b8a-af9a-c26cdcf9670a" name="Changes" comment="Kruskal算法">
-      <change afterPath="$PROJECT_DIR$/src/com/abc/algorithms/dijkstra/DijkstraDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/abc/algorithms/mytry/DijkstraAlgorithm.java" afterDir="false" />
+    <list default="true" id="5cedd577-6c47-4b8a-af9a-c26cdcf9670a" name="Changes" comment="Dijkstra算法">
+      <change afterPath="$PROJECT_DIR$/src/com/abc/algorithms/floyd/FloydDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/abc/algorithms/kruskal/KruskalDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/abc/algorithms/kruskal/KruskalDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/abc/algorithms/mytry/Greedy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/abc/algorithms/mytry/Greedy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/abc/algorithms/mytry/KruskalAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/abc/algorithms/mytry/KruskalAlgorithm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/abc/algorithms/mytry/MSTWithPrim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/abc/algorithms/mytry/MSTWithPrim.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +56,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.DijkstraAlgorithm (1)">
+  <component name="RunManager" selected="Application.FloydDemo">
     <configuration name="DijkstraAlgorithm (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.abc.algorithms.mytry.DijkstraAlgorithm" />
       <module name="D&amp;A" />
@@ -109,12 +109,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DijkstraDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.abc.algorithms.dijkstra.DijkstraDemo" />
+    <configuration name="FloydDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abc.algorithms.floyd.FloydDemo" />
       <module name="D&amp;A" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.abc.algorithms.dijkstra.*" />
+          <option name="PATTERN" value="com.abc.algorithms.floyd.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FloydDemo" />
         <item itemvalue="Application.DijkstraAlgorithm (1)" />
         <item itemvalue="Application.DijkstraAlgorithm" />
         <item itemvalue="Application.DijkstraDemo (2)" />
         <item itemvalue="Application.DijkstraDemo (1)" />
-        <item itemvalue="Application.DijkstraDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -270,14 +270,8 @@
       <workItem from="1675908275530" duration="12319000" />
       <workItem from="1675921349929" duration="41000" />
       <workItem from="1675921402258" duration="225000" />
-      <workItem from="1675997599685" duration="11308000" />
-    </task>
-    <task id="LOCAL-00002" summary="test">
-      <created>1666421758912</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1666421758912</updated>
+      <workItem from="1675997599685" duration="11426000" />
+      <workItem from="1676082399024" duration="6765000" />
     </task>
     <task id="LOCAL-00003" summary="queue">
       <created>1666426553957</created>
@@ -615,7 +609,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675921287858</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Dijkstra算法">
+      <created>1676018567485</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1676018567486</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -656,7 +657,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="冒泡排序及优化，当进入一趟排序后发现没有元素进行交换就已经是有序的，退出即可" />
     <MESSAGE value="选择排序" />
     <MESSAGE value="插入排序+希尔排序" />
     <MESSAGE value="希尔排序位移版+快速排序+归并排序+基数排序" />
@@ -681,7 +681,8 @@
     <MESSAGE value="贪心算法集合覆盖问题+初始prim" />
     <MESSAGE value="prim实现" />
     <MESSAGE value="Kruskal算法" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kruskal算法" />
+    <MESSAGE value="Dijkstra算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dijkstra算法" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

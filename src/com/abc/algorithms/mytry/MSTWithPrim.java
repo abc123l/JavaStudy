@@ -5,6 +5,7 @@ import java.util.Arrays;
 /**
  * @author abc
  * @version 1.0
+ * 修路问题
  */
 public class MSTWithPrim {
     public static void main(String[] args) {

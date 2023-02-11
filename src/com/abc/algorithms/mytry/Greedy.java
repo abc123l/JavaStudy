@@ -7,6 +7,7 @@ import java.util.HashSet;
 /**
  * @author abc
  * @version 1.0
+ * 集合覆盖问题
  */
 public class Greedy {
     public static void main(String[] args) {
