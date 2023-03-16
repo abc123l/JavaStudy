@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="52f5cc29-3944-4186-9c6d-95db218aebc7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/c3p0_0_9_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/druid_1_1_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_7_bin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter25.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/c3p0-0.9.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/commons-dbutils-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/druid-1.1.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/mysql-connector-java-5.1.7-bin.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/c3p0-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/abc/jdbc/JDBC01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/abc/jdbc/JdbcConn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/abc/jdbc/batch/Batch_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/abc/jdbc/datasource/C3P0_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/abc/jdbc/datasource/ConQuestion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/abc/jdbc/datasource/DB_Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/abc/jdbc/datasource/Dept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/abc/jdbc/datasource/Druid_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/abc/jdbc/datasource/JDBCUtilsByDruid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/abc/jdbc/myjdbc/JDBCInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/abc/jdbc/myjdbc/MysqlJdbcImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/abc/jdbc/myjdbc/TestJdbc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/abc/jdbc/preparedstatement_/PSDML.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/abc/jdbc/preparedstatement_/PreparedStatement_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/abc/jdbc/resultset_/ResultSet_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/abc/jdbc/statement/Statement_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/abc/jdbc/transaction/Transaction_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/abc/jdbc/utils/JDBCUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/abc/jdbc/utils/JDBCUtils_Use.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/druid.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mysql.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2MjPNzlV5KqIieVxVZN8wLWMirg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/idea_java_projects/chapter25/libs",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\idea_java_projects\chapter25\libs" />
+      <recent name="D:\idea_java_projects\chapter25\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.DB_Utils.testDML">
+    <configuration name="DB_Utils.queryMany" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chapter25" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.abc.jdbc.datasource.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.abc.jdbc.datasource" />
+      <option name="MAIN_CLASS_NAME" value="com.abc.jdbc.datasource.DB_Utils" />
+      <option name="METHOD_NAME" value="queryMany" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DB_Utils.testDML" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chapter25" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.abc.jdbc.datasource.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.abc.jdbc.datasource" />
+      <option name="MAIN_CLASS_NAME" value="com.abc.jdbc.datasource.DB_Utils" />
+      <option name="METHOD_NAME" value="testDML" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DB_Utils.testQuerySingle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chapter25" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.abc.jdbc.datasource.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.abc.jdbc.datasource" />
+      <option name="MAIN_CLASS_NAME" value="com.abc.jdbc.datasource.DB_Utils" />
+      <option name="METHOD_NAME" value="testQuerySingle" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DB_Utils.testScalar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chapter25" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.abc.jdbc.datasource.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.abc.jdbc.datasource" />
+      <option name="MAIN_CLASS_NAME" value="com.abc.jdbc.datasource.DB_Utils" />
+      <option name="METHOD_NAME" value="testScalar" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Druid_.resultSetToArrayList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chapter25" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.abc.jdbc.datasource.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.abc.jdbc.datasource" />
+      <option name="MAIN_CLASS_NAME" value="com.abc.jdbc.datasource.Druid_" />
+      <option name="METHOD_NAME" value="resultSetToArrayList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DB_Utils.testDML" />
+        <item itemvalue="JUnit.DB_Utils.testScalar" />
+        <item itemvalue="JUnit.DB_Utils.testQuerySingle" />
+        <item itemvalue="JUnit.DB_Utils.queryMany" />
+        <item itemvalue="JUnit.Druid_.resultSetToArrayList" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="52f5cc29-3944-4186-9c6d-95db218aebc7" name="Changes" comment="" />
+      <created>1678277986040</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678277986040</updated>
+      <workItem from="1678277987124" duration="7449000" />
+      <workItem from="1678416827288" duration="24000" />
+      <workItem from="1678426822882" duration="7194000" />
+      <workItem from="1678498523540" duration="751000" />
+      <workItem from="1678511588796" duration="5318000" />
+      <workItem from="1678588842119" duration="1922000" />
+      <workItem from="1678590829860" duration="2156000" />
+      <workItem from="1678700299841" duration="4505000" />
+      <workItem from="1678768902684" duration="7000" />
+      <workItem from="1678795084998" duration="4588000" />
+      <workItem from="1678873636847" duration="5500000" />
+      <workItem from="1678950747901" duration="10000" />
+      <workItem from="1678964607067" duration="4729000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/abc/jdbc/batch/Batch_.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="resultSet" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
