@@ -13,6 +13,7 @@ import java.util.concurrent.TimeoutException;
  * @version 1.0
  */
 public class Provider {
+    private int p;
     @Test
     public void sendMessage() throws IOException, TimeoutException {
         ConnectionFactory connectionFactory = new ConnectionFactory();
