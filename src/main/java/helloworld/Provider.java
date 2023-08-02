@@ -14,6 +14,7 @@ import java.util.concurrent.TimeoutException;
  */
 public class Provider {
     private int p;
+    private int id;
     @Test
     public void sendMessage() throws IOException, TimeoutException {
         ConnectionFactory connectionFactory = new ConnectionFactory();
